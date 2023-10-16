@@ -35,9 +35,10 @@ from email.mime.audio import MIMEAudio
 from email.mime.base import MIMEBase
 # To identify the MIME type based on file extension.
 from mimetypes import guess_type as guess_mime_type
+
+
 dotenv_path= find_dotenv()
 load_dotenv(dotenv_path)
-voice_id = "pNInz6obpgDQGcFmaJgB"
 Vid = os.getenv("voice_id")
 elevenLabsAPI = os.getenv("elevenLabsAPI")
 # Define the scope for Gmail API. This scope allows full access to the Gmail account.
