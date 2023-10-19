@@ -1,0 +1,49 @@
+Day 1
+Doctor 3: Long Day
+Doctor 4: Long Day
+Doctor 5: Normal Day
+Doctor 2: Long Day
+Doctor 1: Long Day
+----------------------------------------
+Day 2
+Doctor 3: Long Day
+Doctor 2: Normal Day
+Doctor 1: Normal Day
+Doctor 5: Night Shift
+Doctor 4: Long Day
+----------------------------------------
+Day 3
+Doctor 5: Night Shift
+Doctor 4: Normal Day
+Doctor 1: Normal Day
+Doctor 3: Night Shift
+Doctor 2: Long Day
+----------------------------------------
+Day 4
+Doctor 5: Long Day
+Doctor 3: Normal Day
+Doctor 2: Normal Day
+Doctor 4: Night Shift
+Doctor 1: Normal Day
+----------------------------------------
+Day 5
+Doctor 2: Long Day
+Doctor 4: Normal Day
+Doctor 5: Long Day
+Doctor 1: Normal Day
+Doctor 3: Normal Day
+----------------------------------------
+Day 6
+Doctor 1: Night Shift
+Doctor 4: Long Day
+Doctor 3: Night Shift
+Doctor 5: Normal Day
+Doctor 2: Long Day
+----------------------------------------
+Day 7
+Doctor 1: Normal Day
+Doctor 5: Normal Day
+Doctor 3: Night Shift
+Doctor 2: Long Day
+Doctor 4: Long Day
+----------------------------------------

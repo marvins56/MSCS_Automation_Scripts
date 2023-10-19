@@ -1,44 +1,43 @@
 
+
+
 import streamlit as st
 from newUtils import *
+import datetime
+import schedule
+import time
+import threading
 
-import streamlit as st
-def list_emails(service):
-    """
-    List the recent emails in the Gmail inbox.
+def send_schedule_notification(service):
+    # Define recipient, subject, and body for the notification email
+    recipient = 'your_email_address_here'
+    subject = 'Email Scheduling Notification'
+    body = 'Your email has been scheduled successfully!'
+    
+    # Send the notification email
+    send_message(service, recipient, subject, body)
 
-    Parameters:
-    - service (googleapiclient.discovery.Resource): The Gmail API service object.
+def schedule_email(service, start_date, frequency):
+    # Calculate the time difference between now and the start_date
+    delay = (start_date - datetime.datetime.now()).total_seconds()
 
-    Returns:
-    - list: A list of email summaries.
-    """
+    # Schedule the email based on the delay and frequency
+    schedule.every(frequency).weeks.do(request_raise_email, service).tag("email_job")
 
-    # Get a list of the recent emails.
-    results = service.users().messages().list(userId='me', maxResults=10).execute()
-    messages = results.get('messages', [])
+    # Send an initial notification about the scheduling
+    send_schedule_notification(service)
 
-    email_summaries = []
-    for message in messages:
-        msg = service.users().messages().get(userId='me', id=message['id']).execute()
-        email_data = msg['payload']['headers']
-
-        for values in email_data:
-            name = values['name']
-            if name == 'From':
-                from_ = values['value']
-            if name == 'Subject':
-                subject = values['value']
-
-        email_summaries.append((msg['id'], f"From: {from_}, Subject: {subject}"))
-
-    return email_summaries
+    # Sleep until the start_date, then run the pending tasks
+    time.sleep(delay)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)  # Check every second for scheduled tasks
 
 def main():
     st.title("Gmail API Streamlit App")
     
     # Create a sidebar for navigation
-    menu = ["Home", "Send Email", "Search Emails", "Read Emails"]
+    menu = ["Home", "Send Email", "Search Emails", "Read Emails", "Schedule Emails"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
@@ -66,6 +65,17 @@ def main():
                 message = {'id': email_id}
                 read_message_ui(service, message)
 
+    elif choice == "Schedule Emails":
+        st.subheader("Schedule Email Automation")
+        
+        start_date = st.date_input("Select a start date for the email:")
+        frequency = st.slider("Select frequency (in weeks) for the email:", 1, 52, 12)  # default to every 3 months
+
+        if st.button("Schedule Email"):
+            # Run the scheduler in a separate thread to avoid blocking the Streamlit app
+            t = threading.Thread(target=schedule_email, args=(service, start_date, frequency))
+            t.start()
+            st.success(f"Email scheduled to start on {start_date} and repeat every {frequency} weeks!")
 
 if __name__ == "__main__":
     main()
