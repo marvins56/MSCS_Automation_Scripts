@@ -87,12 +87,19 @@ def display_shift_statistics(shift_df):
     st.subheader("Doctor Shift Assignments")
     st.table(shift_df)
 
+
+
+
+st.title("Doctors' Shifts Scheduler")
+# Main Streamlit App
+st.title("Combined Streamlit App")
+
 # Main Sidebar Dropdown for feature selection
 main_options = ["Home", "Email Feature", "Doctors' Shifts Scheduler"]
 main_choice = st.sidebar.selectbox("Choose a Feature", main_options)
 
 if main_choice == "Home":
-    st.header("Welcome to the Automation Center!")
+    st.header("Welcome to the Combined Streamlit App!")
     st.write("""
     This app offers two main functionalities:
     1. **Email Feature**: You can send emails, view your inbox, search emails, and automate the process of asking for a raise.
@@ -108,28 +115,28 @@ elif main_choice == "Email Feature":
     if email_choice == "Send Email":
         st.subheader("Send Email")
 
-        # Input fields for email details
-        destination = st.text_input("Recipient Email")
-        subject = st.text_input("Email Subject")
-        body = st.text_area("Email Body")
-        attachments = st.file_uploader("Upload Attachments", type=["txt", "pdf", "png", "jpg", "jpeg"], accept_multiple_files=True)
+    # Input fields for email details
+    destination = st.text_input("Recipient Email")
+    subject = st.text_input("Email Subject")
+    body = st.text_area("Email Body")
+    attachments = st.file_uploader("Upload Attachments", type=["txt", "pdf", "png", "jpg", "jpeg"], accept_multiple_files=True)
 
-        # Send button
-        if st.button("Send Email"):
-            # Convert uploaded files to a format that your function can handle
-            filenames = []
-            for attachment in attachments:
-                with open(attachment.name, "wb") as f:
-                    f.write(attachment.getvalue())
-                filenames.append(attachment.name)
+    # Send button
+    if st.button("Send Email"):
+        # Convert uploaded files to a format that your function can handle
+        filenames = []
+        for attachment in attachments:
+            with open(attachment.name, "wb") as f:
+                f.write(attachment.getvalue())
+            filenames.append(attachment.name)
 
-            # Send the email
-            response = send_message(service, destination, subject, body, filenames)
-            st.success("Email sent successfully!")
+        # Send the email
+        response = send_message(service, destination, subject, body, filenames)
+        st.success("Email sent successfully!")
 
-            # Remove temporary files (optional)
-            for filename in filenames:
-                os.remove(filename)
+        # Remove temporary files (optional)
+        for filename in filenames:
+            os.remove(filename)
 
     elif email_choice == "Inbox":
         st.subheader("Inbox")

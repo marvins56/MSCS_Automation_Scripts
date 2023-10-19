@@ -1,49 +1,75 @@
-Day 1
-Doctor 5: Long Day
-Doctor 3: Long Day
-Doctor 4: Normal Day
-Doctor 2: Long Day
-Doctor 1: Night Shift
+2023-10-12
+elvis: Long Day
+mark: Long Day
+bob: Long Day
 ----------------------------------------
-Day 2
-Doctor 1: Night Shift
-Doctor 2: Long Day
-Doctor 3: Long Day
-Doctor 5: Night Shift
-Doctor 4: Night Shift
+2023-10-13
+elvis: Long Day
+bob: Long Day
+mark: Night Shift
 ----------------------------------------
-Day 3
-Doctor 5: Long Day
-Doctor 2: Night Shift
-Doctor 1: Normal Day
-Doctor 3: Normal Day
-Doctor 4: Night Shift
+2023-10-14
+mark: Night Shift
+bob: Night Shift
+elvis: Normal Day
 ----------------------------------------
-Day 4
-Doctor 3: Long Day
-Doctor 5: Normal Day
-Doctor 2: Normal Day
-Doctor 1: Normal Day
-Doctor 4: Night Shift
+2023-10-15
+bob: Normal Day
+elvis: Night Shift
+mark: Long Day
 ----------------------------------------
-Day 5
-Doctor 1: Long Day
-Doctor 2: Normal Day
-Doctor 3: Night Shift
-Doctor 4: Normal Day
-Doctor 5: Night Shift
+2023-10-16
+mark: Normal Day
+bob: Normal Day
+elvis: Long Day
 ----------------------------------------
-Day 6
-Doctor 2: Night Shift
-Doctor 3: Night Shift
-Doctor 5: Night Shift
-Doctor 1: Night Shift
-Doctor 4: Night Shift
+2023-10-17
+elvis: Night Shift
+bob: Long Day
+mark: Long Day
 ----------------------------------------
-Day 7
-Doctor 4: Night Shift
-Doctor 1: Long Day
-Doctor 2: Long Day
-Doctor 5: Normal Day
-Doctor 3: Long Day
+2023-10-18
+bob: Normal Day
+elvis: Long Day
+mark: Night Shift
+----------------------------------------
+2023-10-19
+mark: Long Day
+elvis: Long Day
+bob: Long Day
+----------------------------------------
+2023-10-20
+elvis: Long Day
+mark: Night Shift
+bob: Normal Day
+----------------------------------------
+2023-10-21
+bob: Normal Day
+elvis: Long Day
+mark: Long Day
+----------------------------------------
+2023-10-22
+mark: Normal Day
+elvis: Normal Day
+bob: Long Day
+----------------------------------------
+2023-10-23
+mark: Night Shift
+elvis: Long Day
+bob: Normal Day
+----------------------------------------
+2023-10-24
+mark: Night Shift
+elvis: Long Day
+bob: Long Day
+----------------------------------------
+2023-10-25
+bob: Long Day
+mark: Normal Day
+elvis: Normal Day
+----------------------------------------
+2023-10-26
+mark: Night Shift
+bob: Normal Day
+elvis: Long Day
 ----------------------------------------
