@@ -41,7 +41,7 @@ Before you begin, ensure you have met the following requirements:
    Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the necessary libraries.
 
    \`\`\`
-   pip install streamlit pandas plotly numpy google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+   `pip install streamlit pandas plotly numpy google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client`
    \`\`\`
 
 4. **Gmail API Configuration**
@@ -53,13 +53,13 @@ Before you begin, ensure you have met the following requirements:
 1. **Activate your virtual environment if you have one**
 
    \`\`\`
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   `source venv/bin/activate`  # On Windows, use `venv\Scripts\activate`
    \`\`\`
 
 2. **Run Streamlit App**
 
    \`\`\`
-   streamlit run app.py  # Replace app.py with the name of your main script if it's different
+   `streamlit run app.py`  # Replace app.py with the name of your main script if it's different
    \`\`\`
 
    The application should open in your default web browser. If not, you can manually open the provided link in the terminal.
