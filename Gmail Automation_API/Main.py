@@ -123,7 +123,6 @@ elif choice == "Search Emails":
                     read_message(service, msg)
                     break
 
-
 elif choice == "Ask for a Raise":
     st.subheader("Automate Raise Request")
 
