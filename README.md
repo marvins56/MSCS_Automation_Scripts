@@ -23,8 +23,7 @@ Before you begin, ensure you have met the following requirements:
    If you haven't already, clone the repository to your local machine.
 
    \`\`\`
-   git clone [repository_url]
-   cd [repository_folder_name]
+   git clone [https://github.com/marvins56/MSCS_Automation_Scripts.git]
    \`\`\`
 
 2. **Set up a Virtual Environment (optional but recommended)**
