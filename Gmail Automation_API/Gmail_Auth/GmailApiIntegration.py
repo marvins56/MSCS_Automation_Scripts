@@ -31,7 +31,7 @@ def gmail_authenticate():
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file('C:\\Users\\DELL\\Desktop\\Marvin\\MSCS\\masters assignment\\Gmail Automation_API\\Credentials.json.json', SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file('C:\\Users\\DELL\\Desktop\\Marvin\MSCS\\masters assignment\\Gmail Automation_API\\Gmail_Auth\\Credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
         # save the credentials for the next run
         with open("token.pickle", "wb") as token:

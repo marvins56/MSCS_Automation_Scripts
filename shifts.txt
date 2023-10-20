@@ -1,56 +1,70 @@
-2023-10-12
-Doctor 1: Night Shift
-Doctor 2: Night Shift
-Doctor 4: Normal Day
-Doctor 5: Long Day
-Doctor 3: Long Day
-----------------------------------------
-2023-10-13
-Doctor 2: Night Shift
-Doctor 3: Long Day
-Doctor 4: Night Shift
-Doctor 1: Normal Day
-Doctor 5: Night Shift
-----------------------------------------
 2023-10-14
-Doctor 2: Long Day
-Doctor 3: Night Shift
-Doctor 1: Long Day
-Doctor 5: Normal Day
-Doctor 4: Long Day
+john: Normal Day
+marvin: Night Shift
+bob: Long Day
 ----------------------------------------
 2023-10-15
-Doctor 1: Night Shift
-Doctor 5: Long Day
-Doctor 2: Night Shift
-Doctor 4: Normal Day
-Doctor 3: Night Shift
+bob: Normal Day
+john: Night Shift
+marvin: Long Day
 ----------------------------------------
 2023-10-16
-Doctor 4: Normal Day
-Doctor 3: Night Shift
-Doctor 1: Long Day
-Doctor 2: Long Day
-Doctor 5: Night Shift
+bob: Normal Day
+john: Long Day
+marvin: Normal Day
 ----------------------------------------
 2023-10-17
-Doctor 3: Normal Day
-Doctor 5: Long Day
-Doctor 2: Normal Day
-Doctor 1: Night Shift
-Doctor 4: Long Day
+marvin: Long Day
+bob: Night Shift
+john: Long Day
 ----------------------------------------
 2023-10-18
-Doctor 3: Long Day
-Doctor 1: Long Day
-Doctor 2: Normal Day
-Doctor 4: Normal Day
-Doctor 5: Night Shift
+bob: Long Day
+marvin: Normal Day
+john: Long Day
 ----------------------------------------
 2023-10-19
-Doctor 4: Normal Day
-Doctor 3: Normal Day
-Doctor 5: Long Day
-Doctor 1: Long Day
-Doctor 2: Long Day
+marvin: Long Day
+bob: Long Day
+john: Night Shift
+----------------------------------------
+2023-10-20
+marvin: Normal Day
+bob: Night Shift
+john: Normal Day
+----------------------------------------
+2023-10-21
+john: Night Shift
+bob: Night Shift
+marvin: Night Shift
+----------------------------------------
+2023-10-22
+marvin: Night Shift
+john: Long Day
+bob: Night Shift
+----------------------------------------
+2023-10-23
+bob: Long Day
+marvin: Night Shift
+john: Normal Day
+----------------------------------------
+2023-10-24
+john: Normal Day
+bob: Night Shift
+marvin: Night Shift
+----------------------------------------
+2023-10-25
+bob: Normal Day
+marvin: Long Day
+john: Long Day
+----------------------------------------
+2023-10-26
+marvin: Long Day
+bob: Night Shift
+john: Night Shift
+----------------------------------------
+2023-10-27
+john: Night Shift
+marvin: Long Day
+bob: Normal Day
 ----------------------------------------
