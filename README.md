@@ -1,3 +1,6 @@
+
+[View File](https://drive.google.com/file/d/1k42jNLpRBh_H95fH5HqXHECQZvPsdUss/view?usp=sharing)
+
 # Streamlit Application - Email and Doctors' Shifts Scheduler
 
 This Streamlit application offers functionalities related to email operations and scheduling doctors' shifts. Users can send emails, view their inbox, search emails, automate raise requests, generate doctor shifts, view the generated shifts, and observe statistical analyses of the shifts.
